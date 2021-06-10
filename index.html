@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <input id="inp" placeholder="0" />
+      </div>
+      <div class="calculator">
+        <div>
+          <button
+            style="color: black; background-color: #a6a6a6"
+            onclick="Clear()"
+          >
+            AC
+          </button>
+          <button
+            style="color: black; background-color: #a6a6a6"
+            onclick="Del()"
+          >
+            DEL
+          </button>
+          <button
+            style="color: black; background-color: #a6a6a6"
+            onclick="Display('%')"
+          >
+            %
+          </button>
+          <button style="background-color: #ff9400" onclick="Display('/')">
+            /
+          </button>
+        </div>
+        <div>
+          <button onclick="Display('7')">7</button>
+          <button onclick="Display('8')">8</button>
+          <button onclick="Display('9')">9</button>
+          <button style="background-color: #ff9400" onclick="Display('*')">
+            x
+          </button>
+        </div>
+        <div>
+          <button onclick="Display('4')">4</button>
+          <button onclick="Display('5')">5</button>
+          <button onclick="Display('6')">6</button>
+          <button style="background-color: #ff9400" onclick="Display('-')">
+            -
+          </button>
+        </div>
+        <div>
+          <button onclick="Display('1')">1</button>
+          <button onclick="Display('2')">2</button>
+          <button onclick="Display('3')">3</button>
+          <button style="background-color: #ff9400" onclick="Display('+')">
+            +
+          </button>
+        </div>
+        <div>
+          <button onclick="Display('0')">0</button>
+          <button onclick="Display('.')">.</button>
+          <button style="background-color: #ff9400" class="e" onclick="Cal()">
+            =
+          </button>
+        </div>
+      </div>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
